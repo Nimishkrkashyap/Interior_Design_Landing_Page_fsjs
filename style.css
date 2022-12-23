@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  background-image: url(./photo/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+}
+.container::after{
+  content: '';
+  position: absolute;
+    width: 100%;
+    height: inherit;
+    background-color: #4e4e4e69;
+    top: 0;
+    z-index: -1;
+}
+.menu{
+  display: none;
+}
+.navigation{
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+}
+.logo h2{
+  font-size: 2rem;
+}
+.nav-items{
+  display: flex;
+  position: relative;
+}
+.nav-items::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -2rem;
+}
+.item-list{
+  list-style-type: none;
+  margin-right: 5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.contact{
+  display: flex;
+  align-items: center;
+}
+.contact i{
+  font-size: 1.8rem;
+  rotate: -30deg;
+  margin-right: 1rem;
+}
+.item-name{
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+.text{
+  margin: 12rem 8rem;
+}
+.text h1{
+  font-size: 5.5rem;
+  line-height: 7rem;
+  letter-spacing: .3rem;
+  font-weight: 700;
+}
+.text button{
+  padding: 1.2rem 2.8rem;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card, .card-bottom{
+  position: absolute;
+  top: 15rem;
+  right: 6rem;
+  padding: 2rem 3rem;
+  background-color: #949494a4;
+  backdrop-filter: blur(3px) saturate(250%);
+}
+.card-bottom{
+  top: 40.5rem;
+  right: 28rem;
+}
+.icon, .icon-bottom{
+  height: 3.5rem;
+  width: 7.5rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  margin-bottom: 1.5rem;
+}
+.icon img,.icon-bottom img{
+  height: 2.5rem;
+  rotate: -90deg;
+  margin: .5rem 2rem;
+}
+.icon-bottom img{
+  rotate: 0deg;
+}
+.line, .line-bottom{
+  position: absolute;
+  bottom: -6rem;
+  right: 8rem;
+  width: 2px;
+  height: 6rem;
+  background-color: #949494a4;
+  backdrop-filter: blur(5px) saturate(3000%);
+}
+.line-bottom{
+  bottom: 4rem;
+  right: -6rem;
+  height: 2px;
+  width: 6rem;
+}
+.line::after, .line-bottom::after{
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  bottom: -2rem;
+  left: -.9rem;
+}
+.line-bottom::after{
+  left: unset;
+  right: -2rem;
+  bottom: -.9rem;
+}
+p{
+  font-size: 1.4rem;
+  width: 20rem;
+}
+
+@media (max-width: 1080px) {
+  html{
+    font-size: 50%;
+  }
+  .navigation{
+    height: 15vh;
+    padding: 1.5rem 3.5rem;
+  }
+  .item-list{
+  margin-right: 4rem;
+  font-size: 1.5rem;
+  }
+  .contact i{
+    font-size: 1.5rem;
+  }
+  .text{
+    margin: 12rem 6rem;
+  }
+  .text h1{
+    font-size: 5rem;
+    line-height: 6.5rem;
+    letter-spacing: .2rem;
+  }
+  .text button{
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html{
+    font-size: 40%;
+  }
+  .text h1{
+    font-size: 5.2rem;
+    line-height: 7rem;
+    letter-spacing: .25rem;
+  }
+  .text button{
+    margin-top: 5.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+    width: 23rem;
+  }
+  .card{
+    right: 3rem;
+    top: 20rem;
+  }
+  .card-bottom{
+    top: 48rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html{
+    font-size: 45%;
+  }
+  .container{
+    height: 110vh;
+  }
+  .container::after{
+    height: inherit;
+  }
+  .nav-items{
+    display: none;
+  }
+  .menu{
+    display: initial;
+    font-size: 2rem;
+  }
+  .text{
+    margin: 40rem 0 0 5rem;
+  }
+  .text h1{
+    margin: 0;
+  }
+  .text button{
+    margin-top: 5rem;
+  }
+  .card{
+    right: 12.5rem;
+    top: 12rem;
+  }
+  .card-bottom{
+    top: 32rem;
+  }
+}
+@media (max-width: 450px) {
+  html{
+    font-size: 40%;
+  }
+  .text{
+    margin: 50rem 0 0 5rem;
+  }
+  .text h1{
+    font-size: 4.5rem;
+  }
+  .card{
+    right: 8rem;
+    top: 15rem;
+  }
+  .card-bottom{
+    top: 35rem;
+    right: 23.5rem;
+  }
+}
