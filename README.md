@@ -12,7 +12,7 @@
 
 ---
 # Time Taken for this project
-> I was taken something 2 hours for completing this project.
+> I was taken something 3.5 hours for completing this project.
 
 > It is completely responsive webpage till 350px.
 ---
